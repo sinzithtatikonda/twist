@@ -1,0 +1,9 @@
+if (msg.payload.top_class == "Feedback") {
+msg.payload="@"+msg.sender+" Thanks for your feedback";
+}
+else if (msg.payload.top_class == "Complaint") {
+msg.payload="@"+msg.sender+" We are sorry. Our customer rep will contact you shortly";
+}
+else {msg.payload="@"+msg.sender+" You can look for more information in our website";
+}
+return msg;
